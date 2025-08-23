@@ -12,7 +12,7 @@
     --font-size-footer-copy: 0.9rem;
 }
 
-/* ====== СБРОС ====== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,14 +27,14 @@ body {
     line-height: 1.5;
 }
 
-/* ====== HEADER ====== */
+
 header {
-    background: var(--green-dark);
+    background-color: rgb(25, 68, 33);
     color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 40px;
+    padding: 24px 47px;
 }
 
 .logo {
@@ -53,10 +53,12 @@ nav.golb {
     font-size: 1rem;
     letter-spacing: 0.03em;
     transition: opacity 0.2s;
+    padding: 20px;
 }
 
 .golb1:hover, .golb2:hover, .golb3:hover {
     opacity: 0.7;
+ 
 }
 
 .bron {
@@ -78,7 +80,66 @@ nav.golb {
     color: var(--green-dark);
 }
 
-/* ====== HERO ====== */
+.krok {
+    background: #a7bdb0; 
+    padding: 32px 0 32px 0;
+    text-align: center;
+}
+
+.krok h1.text1 {
+    font-size: 2.15rem;
+    font-weight: 1000;
+    color: #23472a;
+    margin-bottom: 12px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 12px auto;
+}
+
+.krok h3.text2 {
+    font-size: 1rem;
+    color: #23472a;
+    font-weight: 700;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 8px auto;
+}
+
+.krok .bron {
+    margin-top: 18px;
+    background: #23472a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 22px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.krok .bron:hover {
+    background: #fff;
+    color: #23472a;
+    border: 2px solid #23472a;
+}
+
+@media (max-width: 700px) {
+    .krok h1.text1,
+    .krok h3.text2 {
+        max-width: 98vw;
+        font-size: 1rem;
+        text-align: left;
+        padding: 0 8px;
+    }
+    .krok {
+        padding: 18px 0 18px 0;
+    }
+}
+
+
 .hotel {
     width: 100%;
     max-width: 700px;
@@ -104,11 +165,12 @@ nav.golb {
 }
 
 .big {
-    font-size: 2.1rem;
-    font-weight: 700;
+    
+    font-weight: 10000000;
     color: var(--green-dark);
     text-align: center;
-    margin: 40px 0 24px 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .apart {
@@ -119,7 +181,7 @@ nav.golb {
     border-radius: 8px;
 }
 
-/* ====== ОПИС АПАРТАМЕНТІВ ====== */
+
 .okno {
     margin: 0 auto 24px auto;
     max-width: 700px;
@@ -135,7 +197,6 @@ nav.golb {
     text-align: center;
 }
 
-/* ====== БЛОКИ З ІКОНКАМИ ====== */
 .lizko, .dveri, .vanna {
     display: flex;
     align-items: flex-start;
@@ -159,7 +220,6 @@ nav.golb {
     margin: 0;
 }
 
-/* ====== СЕКЦІЯ "ІДЕАЛЬНИЙ ВІДПОЧИНОК" ====== */
 h1, h2 {
     font-size: var(--font-size-h1);
     font-weight: 700;
@@ -176,7 +236,7 @@ h3 {
     font-weight: 400;
 }
 
-/* ====== FEATURES GRID ====== */
+
 .features {
     background: var(--white);
     padding: 36px 0 36px 0;
@@ -197,8 +257,8 @@ h3 {
 }
 
 .feature-icon {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
     margin-top: 2px;
 }
 
@@ -214,7 +274,7 @@ h3 {
     color: var(--green-dark);
 }
 
-/* ====== СЕКЦІЯ "ВІДГУКИ ГОСТЕЙ" ====== */
+
 .reviews-section {
     background: var(--green-light);
     padding: 48px 0 48px 0;
@@ -293,7 +353,6 @@ h3 {
     background: transparent;
 }
 
-/* ====== СЕКЦІЯ З ФОТО НОМЕРА ====== */
 .room-photo-section {
     width: 100%;
     background: var(--white);
@@ -309,25 +368,31 @@ h3 {
     box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
 }
 
-/* ====== СЕКЦІЯ "ЗАЛИШАЙТЕСЬ РАЗОМ" ====== */
+
 .features-section {
     background: var(--white);
-    padding: 36px 0 36px 0;
-    text-align: left;
+    padding: 76px 0 96px 0;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .features-section h2 {
     font-size: var(--font-size-h2);
     color: var(--green-dark);
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .features-section p {
     color: var(--green-dark);
     font-size: 1rem;
-    margin-bottom: 24px;
+    margin-bottom: 54px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+
 }
 
 .features-list {
@@ -336,6 +401,7 @@ h3 {
     gap: 32px 48px;
     max-width: 700px;
     margin: 0 auto;
+    font-size: 1.1rem;
 }
 
 .features-list .feature-item {
@@ -348,7 +414,7 @@ h3 {
     max-width: 100%;
 }
 
-/* ====== СЕКЦІЯ БРОНЮВАННЯ ====== */
+
 .booking-section {
     background: var(--green-light);
     padding: 48px 0 48px 0;
@@ -394,12 +460,19 @@ h3 {
     border: 2px solid var(--green-dark);
 }
 
-/* ====== FOOTER ====== */
+
 .footer-section {
     background: var(--green-dark);
     color: var(--white);
     padding: 48px 0 0 0;
     font-size: var(--font-size-base);
+}
+
+.footer-section-1{
+    background: var(--green-dark);
+    color: var(--white);
+    padding: 48px 0 0 0;
+    font-size: var(--font-size-base); 
 }
 
 .footer-content {
@@ -527,7 +600,7 @@ h3 {
     letter-spacing: 0.02em;
 }
 
-/* ====== АДАПТИВ ====== */
+
 @media (max-width: 900px) {
     .footer-content {
         padding: 0 12px;
@@ -567,5 +640,565 @@ h3 {
     }
     .big, h1, h2 {
         font-size: 1.3rem;
+    }
+}
+
+.kartinka {
+    background-image: url('./img/Hvoya_1920.jpg');
+    
+    height:790px;
+    
+}
+
+.kartinka1{
+    background-image: url('./img/Frame.png');
+
+}
+
+.kartinka2{
+    background-image: url('./img/Fernblick-Suite-im-Hotel-Fernblick_Matthias-Kronfuss.webp');
+}
+
+
+
+
+ 
+
+.lizko:hover, .dveri:hover, .vanna:hover {
+    background: rgb(188, 230, 197);
+    transition: background 0.3s;
+    box-shadow: 0 0 20px #c9ffcb, 0 0 40px #c9ffcb;
+
+}
+
+.feature-item:hover {
+    background: rgba(165, 181, 168, 0.2);
+    transition: background 0.3s;
+    box-shadow: 0 0 20px rgba(165, 181, 168, 0.3), 0 0 40px rgba(165, 181, 168, 0.3);
+}
+.feature-icon{
+    margin: 6px;
+}
+.noga{
+    background-color: var(--green-dark);
+}
+.perek{
+    color: rgb(164, 219, 164);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s;
+    padding: 20px;
+    text-decoration: underline;
+
+}
+
+
+.history-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 48px auto;
+    min-height: 380px;
+    margin-bottom: 150px;
+}
+
+.history-img-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45);
+    border-radius: 18px;
+    display: block;
+}
+
+.history-text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 48px;
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(35, 71, 42, 0.5);
+    background: rgba(35, 71, 42, 0.25);
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.history-text h2 {
+    color: #fff;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.history-text .opis {
+    color: #fff;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    text-align: left;
+    font-size: 1.08rem;
+    font-weight: 400;
+    box-shadow: none;
+}
+
+
+@media (max-width: 900px) {
+    .history-block {
+        min-height: 320px;
+    }
+    .history-text {
+        padding: 24px 12px;
+        font-size: 1rem;
+    }
+}
+
+
+.contacts-main {
+    background: var(--white);
+    min-height: 100vh;
+    padding: 48px 0 64px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 48px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.contacts-left, .contacts-right {
+    flex: 1 1 0;
+    min-width: 340px;
+}
+
+.contacts-title {
+    font-size: 2rem;
+    color: var(--green-dark);
+    font-weight: 700;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contacts-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: var(--white);
+    border: 2px solid #d2f3dd;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-sizing: border-box;
+}
+
+.contacts-card-icon img {
+    width: 28px;
+    height: 28px;
+    margin-top: 2px;
+}
+
+.contacts-card-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+}
+
+.contacts-card-text {
+    font-size: 1rem;
+    color: var(--green-dark);
+    line-height: 1.6;
+}
+
+.contacts-card-note {
+    font-size: 0.95rem;
+    color: #6dbb7b;
+    display: block;
+    margin-top: 4px;
+}
+
+.contacts-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-form {
+    background: var(--white);
+    border: 2px solid #d2f3dd;
+    border-radius: 16px;
+    padding: 32px 28px 24px 28px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contacts-form-row {
+    display: flex;
+    gap: 18px;
+}
+
+.contacts-form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    gap: 6px;
+}
+
+.contacts-form-group label {
+    font-size: 1rem;
+    color: var(--green-dark);
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.contacts-form-group input,
+.contacts-form-group textarea {
+    border: 1.5px solid #d2f3dd;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    background: #f8fffa;
+    color: var(--green-dark);
+    outline: none;
+    transition: border 0.2s;
+}
+
+.contacts-form-group input:focus,
+.contacts-form-group textarea:focus {
+    border-color: var(--green-light);
+}
+
+.contacts-form-btn {
+    background: #059447;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contacts-form-btn:hover {
+    background: var(--green-dark);
+}
+
+.contacts-form-btn-icon {
+    font-size: 1.2rem;
+}
+
+.contacts-form-note {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--green-dark);
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 1100px) {
+    .contacts-container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 8px;
+    }
+    .contacts-main {
+        padding: 32px 0 32px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .contacts-title {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+    }
+}
+    .contacts-card {
+        padding: 14px 8px;
+        font-size: 0.95rem;
+    }
+    .contacts-form {
+        padding: 16px 8px 12px
+    }
+
+
+.nafon {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/Fernblick-Suite-im-Hotel-Fernblick_Matthias-Kronfuss.webp');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nafon-overlay {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+}
+
+.nafon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 71, 42, 0.55); 
+    z-index: 1;
+    border-radius: 0;
+}
+
+.nafon .big {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    line-height: 1.2;
+}
+
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 14, 3, 0.95);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.5s;
+}
+
+.preloader-content {
+    text-align: center;
+}
+
+.preloader-emoji {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 18px;
+    animation: spin 1.2s linear infinite;
+}
+
+.preloader-text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+
+.next-btn {
+    display: inline-block;
+    float: right;
+    margin-top: 24px;
+    margin-right: 80px;
+    background: #3f814c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.next-btn:hover {
+    background: #a7bdb0;
+    color: #3f814c;
+    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+}
+
+
+@media (max-width: 700px) {
+    .next-btn {
+        float: none;
+        display: block;
+        margin: 24px auto 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+.next-btn1 {
+    display: inline-block;
+    float: right;
+    margin-bottom: 14px;
+    margin-right: 80px;
+    background: #3f814c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    
+}
+
+.next-btn1:hover {
+    background: #a7bdb0;
+    color: #3f814c;
+    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+}
+
+
+.back-btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+    background-color: var(--green-light);
+}
+
+.back-btn {
+    background: #23472a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+.back-btn:hover {
+    background: #a7bdb0;
+    color: #23472a;
+    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+}
+
+@media (max-width: 700px) {
+    .back-btn-block {
+        justify-content: center;
+    }
+    .back-btn {
+        margin-left: 0;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.backno-btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+    background-color: var(--white);
+}
+
+.backno-btn {
+    background: #23472a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.back1-btn{
+    background: #23472a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-left: 1400px;
+    margin-bottom: 30px;
+
+}
+
+
+
+.backno-btn:hover {
+    background: #a7bdb0;
+    color: #23472a;
+    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+}
+
+@media (max-width: 700px) {
+    .backno-btn-block {
+        justify-content: center;
+    }
+    .backno-btn {
+        margin-left: 0;
+        width: 80%;
+        text-align: center;
     }
 }
