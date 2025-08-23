@@ -1202,3 +1202,27 @@ h3 {
         text-align: center;
     }
 }
+
+header {
+    margin-bottom: 0;
+}
+
+main {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.kartinka {
+    margin-top: 0;
+    display: block;
+    background-image: url('./img/Night-1-copy-scaled.jpg.webp');
+}
+
+.kartinka img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
