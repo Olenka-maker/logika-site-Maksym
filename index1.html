@@ -35,6 +35,10 @@
         <img src="img/70440098-France-Rhone-Alps-Megève-Ski-Resort-Chalet-du-Mont-d-Arbois-Relais-Châteaux-luxury-hotel-view-from.jpg" class="history-img" alt="Готель Hvoya">
     </div>
 </div> 
+
+</main>
+
+
 <footer class="footer-section-1">
     <div class="footer-content">
         <div class="footer-columns">
@@ -76,4 +80,16 @@
         </div>
     </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const circle = document.createElement("div");
+    circle.className = "cursor-circle";
+    document.body.appendChild(circle);
+
+    document.addEventListener("mousemove", function(e) {
+        circle.style.left = e.clientX + "px";
+        circle.style.top = e.clientY + "px";
+    });
+});
+</script>
 </body>

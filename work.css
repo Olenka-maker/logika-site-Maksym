@@ -1,8 +1,8 @@
 :root {
-    --green-dark: #23472a;
-    --green-light: #a7bdb0;
-    --white: #fff;
-    --gray: #e9ece7;
+    --green-dark: #232323; /* темно-сірий */
+    --green-light: #bfc2c4; /* світло-сірий бетон */
+    --white: #f5f5f5; /* майже білий */
+    --gray: #e0e0e0; /* світлий бетон */
     --font-main: 'Montserrat', Arial, sans-serif;
     --font-size-base: 16px;
     --font-size-h1: 2.2rem;
@@ -29,13 +29,18 @@ body {
 
 
 header {
-    background-color: rgb(25, 68, 33);
+    background-color: #232323;
     color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 47px;
+    background-image: 
+        repeating-linear-gradient(135deg, #232323 0px, #232323 4px, #2d2d2d 8px, #232323 12px),
+        url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-size: auto, 400px 400px;
 }
+
 
 .logo {
     height: 38px;
@@ -81,7 +86,7 @@ nav.golb {
 }
 
 .krok {
-    background: #a7bdb0; 
+    background: #bfc2c4; 
     padding: 32px 0 32px 0;
     text-align: center;
 }
@@ -89,7 +94,7 @@ nav.golb {
 .krok h1.text1 {
     font-size: 2.15rem;
     font-weight: 1000;
-    color: #23472a;
+    color: #232323;
     margin-bottom: 12px;
     text-align: left;
     max-width: 600px;
@@ -98,7 +103,7 @@ nav.golb {
 
 .krok h3.text2 {
     font-size: 1rem;
-    color: #23472a;
+    color: #232323;
     font-weight: 700;
     text-align: left;
     max-width: 600px;
@@ -107,7 +112,7 @@ nav.golb {
 
 .krok .bron {
     margin-top: 18px;
-    background: #23472a;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -122,8 +127,8 @@ nav.golb {
 
 .krok .bron:hover {
     background: #fff;
-    color: #23472a;
-    border: 2px solid #23472a;
+    color: #232323;
+    border: 2px solid #232323;
 }
 
 @media (max-width: 700px) {
@@ -276,7 +281,7 @@ h3 {
 
 
 .reviews-section {
-    background: var(--green-light);
+    background: rgb(146, 140, 140);
     padding: 48px 0 48px 0;
     text-align: center;
 }
@@ -314,12 +319,11 @@ h3 {
 }
 
 .stars {
-    color: #f7c948;
+    color: #FFD700;
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 2px;
 }
-
 .review-card h4 {
     font-size: 1.05rem;
     color: var(--green-dark);
@@ -416,7 +420,7 @@ h3 {
 
 
 .booking-section {
-    background: var(--green-light);
+    background: var(--white);
     padding: 48px 0 48px 0;
     text-align: center;
 }
@@ -462,14 +466,14 @@ h3 {
 
 
 .footer-section {
-    background: var(--green-dark);
+    background: #232323;
     color: var(--white);
     padding: 48px 0 0 0;
     font-size: var(--font-size-base);
 }
 
 .footer-section-1{
-    background: var(--green-dark);
+    background: #232323;
     color: var(--white);
     padding: 48px 0 0 0;
     font-size: var(--font-size-base); 
@@ -651,7 +655,8 @@ h3 {
 }
 
 .kartinka1{
-    background-image: url('./img/Frame.png');
+    background-image: url('./img/luxe_room_hotel_odessa_first_floor.jpg');
+    height: 800px;
 
 }
 
@@ -662,28 +667,29 @@ h3 {
 
 
 
+
  
 
 .lizko:hover, .dveri:hover, .vanna:hover {
-    background: rgb(188, 230, 197);
+    background: #bfc2c4;
     transition: background 0.3s;
-    box-shadow: 0 0 20px #c9ffcb, 0 0 40px #c9ffcb;
+    box-shadow: 0 0 20px #bfc2c4, 0 0 40px #bfc2c4;
 
 }
 
 .feature-item:hover {
-    background: rgba(165, 181, 168, 0.2);
+    background: #e0e0e0;
     transition: background 0.3s;
-    box-shadow: 0 0 20px rgba(165, 181, 168, 0.3), 0 0 40px rgba(165, 181, 168, 0.3);
+    box-shadow: 0 0 20px #e0e0e0, 0 0 40px #e0e0e0;
 }
 .feature-icon{
     margin: 6px;
 }
 .noga{
-    background-color: var(--green-dark);
+    background-color: #232323;
 }
 .perek{
-    color: rgb(164, 219, 164);
+    color: #bfc2c4;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -736,8 +742,8 @@ h3 {
     margin: 0 auto;
     padding: 48px 48px;
     color: #fff;
-    text-shadow: 0 2px 12px rgba(35, 71, 42, 0.5);
-    background: rgba(35, 71, 42, 0.25);
+    text-shadow: 0 2px 12px #232323;
+    background: rgba(35, 35, 35, 0.25);
     border-radius: 18px;
     box-sizing: border-box;
 }
@@ -813,7 +819,7 @@ h3 {
     align-items: flex-start;
     gap: 18px;
     background: var(--white);
-    border: 2px solid #d2f3dd;
+    border: 2px solid #bfc2c4;
     border-radius: 16px;
     padding: 24px 28px;
     box-sizing: border-box;
@@ -840,7 +846,7 @@ h3 {
 
 .contacts-card-note {
     font-size: 0.95rem;
-    color: #6dbb7b;
+    color: #888;
     display: block;
     margin-top: 4px;
 }
@@ -853,7 +859,7 @@ h3 {
 
 .contacts-form {
     background: var(--white);
-    border: 2px solid #d2f3dd;
+    border: 2px solid #bfc2c4;
     border-radius: 16px;
     padding: 32px 28px 24px 28px;
     width: 100%;
@@ -884,11 +890,11 @@ h3 {
 
 .contacts-form-group input,
 .contacts-form-group textarea {
-    border: 1.5px solid #d2f3dd;
+    border: 1.5px solid #bfc2c4;
     border-radius: 8px;
     padding: 10px 14px;
     font-size: 1rem;
-    background: #f8fffa;
+    background: #e0e0e0;
     color: var(--green-dark);
     outline: none;
     transition: border 0.2s;
@@ -896,11 +902,11 @@ h3 {
 
 .contacts-form-group input:focus,
 .contacts-form-group textarea:focus {
-    border-color: var(--green-light);
+    border-color: #888;
 }
 
 .contacts-form-btn {
-    background: #059447;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -918,7 +924,8 @@ h3 {
 }
 
 .contacts-form-btn:hover {
-    background: var(--green-dark);
+    background: #bfc2c4;
+    color: #232323;
 }
 
 .contacts-form-btn-icon {
@@ -987,7 +994,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(35, 71, 42, 0.55); 
+    background: rgba(35, 35, 35, 0.55); 
     z-index: 1;
     border-radius: 0;
 }
@@ -1008,7 +1015,7 @@ h3 {
 #preloader {
     position: fixed;
     inset: 0;
-    background: rgba(0, 14, 3, 0.95);
+    background: rgba(35, 35, 35, 0.95);
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -1046,7 +1053,7 @@ h3 {
     float: right;
     margin-top: 24px;
     margin-right: 80px;
-    background: #3f814c;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -1055,14 +1062,14 @@ h3 {
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    box-shadow: 0 2px 8px #bfc2c4;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .next-btn:hover {
-    background: #a7bdb0;
-    color: #3f814c;
-    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+    background: #bfc2c4;
+    color: #232323;
+    box-shadow: 0 4px 16px #bfc2c4;
 }
 
 
@@ -1082,7 +1089,7 @@ h3 {
     float: right;
     margin-bottom: 14px;
     margin-right: 80px;
-    background: #3f814c;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -1091,15 +1098,15 @@ h3 {
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    box-shadow: 0 2px 8px #bfc2c4;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     
 }
 
 .next-btn1:hover {
-    background: #a7bdb0;
-    color: #3f814c;
-    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+    background: #bfc2c4;
+    color: #232323;
+    box-shadow: 0 4px 16px #bfc2c4;
 }
 
 
@@ -1108,11 +1115,11 @@ h3 {
     display: flex;
     justify-content: flex-start;
     
-    background-color: var(--green-light);
+    
 }
 
 .back-btn {
-    background: #23472a;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -1121,16 +1128,16 @@ h3 {
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    box-shadow: 0 2px 8px #bfc2c4;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     margin-left: 80px;
     margin-bottom: 30px;
 }
 
 .back-btn:hover {
-    background: #a7bdb0;
-    color: #23472a;
-    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+    background: #bfc2c4;
+    color: #232323;
+    box-shadow: 0 4px 16px #bfc2c4;
 }
 
 @media (max-width: 700px) {
@@ -1149,11 +1156,11 @@ h3 {
     display: flex;
     justify-content: flex-start;
     
-    background-color: var(--white);
+    
 }
 
 .backno-btn {
-    background: #23472a;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -1162,13 +1169,13 @@ h3 {
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    box-shadow: 0 2px 8px #bfc2c4;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     margin-left: 80px;
     margin-bottom: 30px;
 }
 .back1-btn{
-    background: #23472a;
+    background: #232323;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -1177,7 +1184,7 @@ h3 {
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(35, 71, 42, 0.07);
+    box-shadow: 0 2px 8px #bfc2c4;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     margin-left: 1400px;
     margin-bottom: 30px;
@@ -1187,9 +1194,9 @@ h3 {
 
 
 .backno-btn:hover {
-    background: #a7bdb0;
-    color: #23472a;
-    box-shadow: 0 4px 16px rgba(35, 71, 42, 0.15);
+    background: #bfc2c4;
+    color: #232323;
+    box-shadow: 0 4px 16px #bfc2c4;
 }
 
 @media (max-width: 700px) {
@@ -1212,17 +1219,130 @@ main {
     margin-top: 0;
 }
 
-.kartinka {
-    margin-top: 0;
-    display: block;
-    background-image: url('./img/Night-1-copy-scaled.jpg.webp');
+
+.footer-section,
+.footer-section-1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.kartinka img {
-    display: block;
+body {
+    margin-bottom: 0;
+    background: var(--white);
+}
+
+main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer,
+.footer-section,
+.footer-section-1 {
+    flex-shrink: 0;
+}
+
+
+.bron:hover,
+.next-btn:hover,
+.back-btn:hover,
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(35,35,35,0.18);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+section, .krok, .features-section, .reviews-section, .booking-section {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s forwards;
+}
+
+section:nth-of-type(1) { animation-delay: 0.1s; }
+section:nth-of-type(2) { animation-delay: 0.3s; }
+section:nth-of-type(3) { animation-delay: 0.5s; }
+section:nth-of-type(4) { animation-delay: 0.7s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cursor-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #bfc2c4;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: background 0.2s, border 0.2s;
+    mix-blend-mode: difference;
+    box-shadow: 0 2px 12px #bfc2c4;
+    backdrop-filter: blur(2px);
+    animation: cursorPulse 1.2s infinite alternate;
+    background: rgba(255,255,255,0.1);
+}
+
+@keyframes cursorPulse {
+    0% { box-shadow: 0 2px 12px #bfc2c4; }
+    100% { box-shadow: 0 8px 32px #bfc2c4; }
+}
+
+.features,
+.features-section,
+.room-photo-section,
+.reviews-section,
+.contacts-main,
+.booking-section,
+.krok,
+.oboi,
+.backno-btn-block,
+.back-btn-block{
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-size: 400px 400px;
+}
+
+.history-block,
+.history-text {
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-size: 400px 400px;
+}
+
+.joj{
+    height: 800px;
+}
+
+.hero {
     width: 100%;
+    height: 100vh;
+    background: url("./img/Night-1-copy-scaled.jpg.webp") no-repeat center center;
+    background-size: cover; 
     margin: 0;
     padding: 0;
 }
 
-
+.section-text {
+    background: #f5f5f5; 
+    padding: 40px 20px;
+}

@@ -34,7 +34,7 @@
 </section>
     
 
-
+<section class="oboi">
         <div class = 'okno'><h1 class = 'text3'>Апартаменти Hvoya створені для тих, хто цінує затишок і стиль. 
             Просторе планування, сучасний інтер’єр, повністю обладнана кухня та вікна з краєвидом на Карпати — усе для вашого комфортного відпочинку
              після активного дня на схилах.</h1></div>
@@ -60,6 +60,7 @@
                 Наш готель пропонує все необхідне для вашого комфорту та розслаблення. 
                 Від затишних номерів до вражаючих природних краєвидів — ви знайдете тут усе, 
                 що потрібно для того, щоб зануритися в атмосферу спокою і відновлення.</h3>
+                </section>
 
 
 <section class="features">
@@ -195,6 +196,20 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const circle = document.createElement("div");
+    circle.className = "cursor-circle";
+    document.body.appendChild(circle);
+
+    document.addEventListener("mousemove", function(e) {
+        circle.style.left = e.clientX + "px";
+        circle.style.top = e.clientY + "px";
+    });
+});
+</script>
+
 <foot class="noga">
 
 </foot>
